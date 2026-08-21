@@ -381,7 +381,7 @@ a.btn1 .download-text {
         <div class="online-counter" id="onlineCounter">
             <div class="online-dot"></div>
             <span class="online-text">当前在线</span>
-            <span class="online-number" id="onlineNumber">80
+            <span class="online-number" id="onlineNumber">128
 			</span>
         </div>
     
@@ -393,7 +393,7 @@ a.btn1 .download-text {
     <!-- ========== JavaScript 功能代码 ========== -->
     <script>
         // ========== 在线人数动态更新 ==========
-        let currentOnline = 80;
+        let currentOnline = 128;
         const onlineNumberEl = document.getElementById('onlineNumber');
         
         function updateOnlineNumber() {
@@ -401,8 +401,8 @@ a.btn1 .download-text {
     const change = Math.floor(Math.random() * 7) - 3;
     currentOnline += change;
     // 保持在合理范围
-    if (currentOnline < 80) currentOnline = 80;
-    if (currentOnline > 130) currentOnline = 130;
+    if (currentOnline < 120) currentOnline = 120;
+    if (currentOnline > 500) currentOnline = 500;
 
     // 添加跳动动画
     onlineNumberEl.classList.add('jump');
